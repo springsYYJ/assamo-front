@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Main from './page/Main';
+import Board from './page/Board';
+import { Route, Routes } from 'react-router-dom';
+import GlobalNavigationBar from './component/GlobalNavigationBar';
+import BoardDetail from './page/BoardDetail';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GlobalNavigationBar/>
+      <Routes> // 라우터 설정
+        <Route path='/' element={<Main/>} /> //Route설정의 필수 요소 path, element값을 입력한다
+        <Route path='/board' element={<Board/>} />
+        <Route path='/board/:id' element={<BoardDetail/>} />
+      </Routes>
     </div>
   );
 }

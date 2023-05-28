@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.nav-logo{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 10vh;  
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main{
+  display: flex;
+  justify-content: center;
+}
+
+.board{
+ 
+}
+
+.card{
+  border: 1px;
+  padding-left: 20px;
+}
+
+.card-info {
+  display: flex;
+}
+
+.card-info div{
+  margin-right :14px;
+}
+
+.card-title{
+  height: 52px;
+  font-size:18px;
+  margin-top: 1px;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+
+.card-contents{
+  height: 43px;
+  max-height: 43px;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
+.card-writer{
+  
+  bottom: 24px;
+  width: 100%;
+  min-height: 40px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.category{
+  margin-top:15px;
+  display:flex;
+}
+
+.card-detail-title{
+  font-weight: bold; 
+}
+
+.local-menu-list{
+  display: flex;
+  list-style-type: none;
+}
+
+.local-menu-list li{
+  padding: 10px;
+}
+
+.nav-map svg{
+ fill:lightgrey;
+ stroke:white;
+ 
+}
+
+.post-card{
+  overflow: auto;
+  height: 650px;
+  
+}
+.post-card::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
